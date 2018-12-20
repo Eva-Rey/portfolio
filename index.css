@@ -1,0 +1,472 @@
+@charset "UTF-8";
+/*===== page d'accueil =======*/
+#hero {
+  background-color: #1E1D1D;
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+  display: table;
+  width: 100%;
+  margin: 0;
+  padding: 0; }
+  #hero p {
+    font-family: 'Lato', sans-serif;
+    text-transform: uppercase;
+    font-size: 7pt;
+    letter-spacing: 2px; }
+
+/*
+font-family: 'Montserrat', sans-serif;
+font-family: 'Lato', sans-serif;
+font-family: 'Spectral', serif;*/
+.parent-hero-content {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+  height: 200px;
+  margin: 20px auto; }
+
+.child01 h1 {
+  position: absolute;
+  top: 48%;
+  left: 50%;
+  transform: translate(-50%, -48%);
+  color: #16A9C0;
+  text-align: center;
+  font-family: 'Spectral', serif;
+  font-size: 44pt; }
+
+.child01 p {
+  position: absolute;
+  top: 53%;
+  left: 50%;
+  transform: translate(-50%, -53%);
+  color: #ffffff;
+  text-align: center;
+  padding: 2em;
+  font-family: 'Lato', sans-serif; }
+
+.child01 a {
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -65%);
+  color: #ffffff;
+  font-family: 'Lato', sans-serif;
+  text-decoration: none;
+  padding: 0.5em;
+  border-radius: 10px;
+  background-color: #16A9C0; }
+
+header {
+  background-color: #1E1D1D; }
+  header h1 {
+    font-family: 'Spectral', serif;
+    color: #16A9C0;
+    text-decoration: none;
+    font-size: 16pt; }
+  header a {
+    text-decoration: none; }
+
+/*======= MAIN =====*/
+main {
+  /*====== Card Spinner =====*/
+  /*======== Phrase de présentation =======*/
+  /*======== developpement =======*/
+  /*======== Footer =======*/
+  /*======== MEDIA QUERIES =======*/
+  /*======== MEDIA QUERIES =======*/
+  /* Bandeau de présentation */
+  /* images bordeaux Vin */
+  /* photographie */
+  /* Contact */ }
+  main .box {
+    width: -60px;
+    margin: auto;
+    position: relative; }
+  main #card-container {
+    position: relative;
+    margin: 30px;
+    width: 400px;
+    height: 400px;
+    z-index: 1;
+    float: left;
+    perspective: 1000px; }
+  main img {
+    width: 400px;
+    height: 400px; }
+  main #card, main #card2, main #card3 {
+    width: 100%;
+    height: 100%;
+    margin: 10%;
+    transform-style: preserve-3d;
+    transition: all .8s linear;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3); }
+  main #card:hover {
+    transform: rotateY(180deg);
+    box-shadow: -5px 5px 15px rgba(0, 0, 0, 0.3); }
+  main #card2:hover {
+    transform: rotateY(-180deg);
+    box-shadow: -5px 5px 15px rgba(0, 0, 0, 0.3); }
+  main #card3:hover {
+    transform: rotateX(180deg);
+    box-shadow: 5px -5px 15px rgba(0, 0, 0, 0.3); }
+  main #card3 .back {
+    transform: rotateX(-180deg); }
+  main .face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden; }
+  main .back {
+    display: block;
+    transform: rotateY(180deg);
+    box-sizing: border-box;
+    padding: 10px;
+    text-align: center;
+    background: #ffffff; }
+    main .back img {
+      width: 50px;
+      height: 50px;
+      flex-wrap: wrap;
+      float: left; }
+  main h1 {
+    font-family: 'Lato', sans-serif;
+    /*text-transform: uppercase;*/
+    letter-spacing: 2px;
+    line-height: normal; }
+  main h1, main a {
+    font-size: 1em;
+    padding-top: 15px;
+    margin-bottom: 15px;
+    color: #16A9C0; }
+  main a:hover {
+    color: #1E1D1D; }
+  main p {
+    font-family: 'Lato', sans-serif;
+    font-size: 14px; }
+  main li {
+    margin-top: 1.4em;
+    margin-left: 1.4em;
+    display: inline-block;
+    float: left; }
+    main li p {
+      text-align: left;
+      display: inline-block;
+      line-height: 2.8em;
+      margin-left: .5em; }
+  main hr {
+    width: 70%;
+    margin-top: 12em;
+    margin-bottom: 1em; }
+  main #card2 p {
+    font-family: 'Lato', sans-serif;
+    font-size: 14px; }
+  main #card2 li {
+    margin-top: 1.4em;
+    margin-left: 1.4em;
+    display: inline-block;
+    float: left; }
+    main #card2 li p {
+      text-align: left;
+      display: inline-block;
+      line-height: 2em;
+      margin-left: .5em; }
+    main #card2 li img {
+      width: 28px;
+      height: auto; }
+  main #pays li {
+    margin-top: .5em;
+    display: inline-block;
+    float: left; }
+    main #pays li p {
+      text-align: left;
+      display: inline-block; }
+  main #card3 p {
+    font-family: 'Lato', sans-serif;
+    font-size: 14px; }
+  main #card3 li {
+    margin-top: 1.4em;
+    margin-left: 1.4em;
+    display: inline-block;
+    float: left; }
+    main #card3 li p {
+      text-align: left;
+      display: inline-block;
+      line-height: 2.7em;
+      margin-left: 1.5em; }
+    main #card3 li img {
+      width: 40px;
+      height: auto; }
+  main .date {
+    color: purple; }
+  main footer {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    font-size: 0.8em;
+    text-transform: uppercase;
+    padding: 10px;
+    color: #EA7996; }
+    main footer a {
+      color: #ffffff;
+      text-decoration: none; }
+      main footer a:hover {
+        color: #7d7d7d; }
+  main #phrase-de-presentation {
+    margin-top: 35em;
+    margin-left: 20em;
+    margin-right: 20em; }
+    main #phrase-de-presentation p {
+      font-family: 'Spectral', serif;
+      color: #16A9C0;
+      text-align: center;
+      font-size: 16px;
+      line-height: normal; }
+    main #phrase-de-presentation img {
+      width: 30px;
+      height: auto;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 0.5em; }
+  main .presentation {
+    width: 100%;
+    text-align: left;
+    display: block;
+    overflow: hidden;
+    color: #1E1D1D;
+    line-height: 2em; }
+    main .presentation hr {
+      border: 0;
+      width: 90%;
+      margin-top: 4em;
+      background: #e7a93e;
+      background-image: linear-gradient(to right, #fffcb8, #e7a93e, #fffcb8);
+      height: 1px; }
+    main .presentation h1 {
+      padding-left: 5em;
+      padding-top: 2em;
+      color: #e7a93e; }
+    main .presentation p {
+      padding-top: 2em;
+      padding-left: 5em;
+      padding-right: 24em; }
+    main .presentation .liens01 {
+      display: flex;
+      justify-content: space-between;
+      padding-left: 5em;
+      padding-right: 5em; }
+    main .presentation a {
+      font-family: 'Lato', sans-serif;
+      font-size: 14px;
+      color: #e7a93e; }
+      main .presentation a:hover {
+        color: #7d7d7d; }
+  main .grados {
+    width: 100%;
+    text-align: left;
+    display: block;
+    overflow: hidden;
+    color: #1E1D1D;
+    line-height: 2em; }
+    main .grados hr {
+      border: 0;
+      width: 90%;
+      margin-top: 4em;
+      background: #d43f70;
+      background-image: linear-gradient(to right, #faebf0, #d43f70, #faebf0);
+      height: 1px; }
+    main .grados h1 {
+      text-align: right;
+      padding-right: 5em;
+      padding-top: 2em;
+      color: #d43f70; }
+    main .grados p {
+      padding-top: 2em;
+      padding-left: 24em;
+      padding-right: 5em; }
+  main .pasiones {
+    width: 100%;
+    text-align: left;
+    display: block;
+    overflow: hidden;
+    color: #1E1D1D;
+    line-height: 2em;
+    padding-bottom: 5em; }
+    main .pasiones hr {
+      border: 0;
+      width: 90%;
+      margin-top: 4em;
+      background: #7fe8ff;
+      background-image: linear-gradient(to right, #c5faff, #7fe8ff, #c5faff);
+      height: 1px; }
+    main .pasiones h1 {
+      padding-left: 5em;
+      padding-top: 2em;
+      color: #7fe8ff; }
+    main .pasiones p {
+      padding-top: 2em;
+      padding-left: 5em;
+      padding-right: 24em; }
+  main .bandeau-footer {
+    background-color: #1E1D1D;
+    width: 100%;
+    text-align: center;
+    display: block;
+    overflow: hidden;
+    color: #1E1D1D; }
+    main .bandeau-footer p {
+      padding: 1em;
+      font-size: 12px;
+      font-family: 'Lato', sans-serif;
+      color: #ffffff; }
+  main #hero {
+    background-image: url(img/hero.jpg);
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    display: table;
+    width: 100%;
+    margin: 0;
+    padding: 0; }
+  main #hero-content {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    color: #ffffff;
+    width: 100%;
+    height: 100%; }
+    main #hero-content h1 {
+      font-size: 50px;
+      color: white; }
+  main #bandeau01 {
+    background-color: #1E1D1D; }
+    main #bandeau01 .bandeau-content {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      vertical-align: middle; }
+    main #bandeau01 .bandeau-item01 {
+      margin: 1em;
+      min-width: 320px;
+      vertical-align: middle;
+      margin: auto; }
+      main #bandeau01 .bandeau-item01 h2 {
+        text-align: center;
+        padding: 2em;
+        color: #16A9C0;
+        /*background-color: purple;*/ }
+    main #bandeau01 .bandeau-item02 {
+      margin: 1em;
+      min-width: 320px;
+      vertical-align: middle;
+      margin: auto; }
+      main #bandeau01 .bandeau-item02 p {
+        width: 38em;
+        padding: 2em;
+        /*background-color: red;*/
+        color: white; }
+  main #bordeaux-vin {
+    background-color: white; }
+    main #bordeaux-vin .bordeaux-content {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around; }
+      main #bordeaux-vin .bordeaux-content video {
+        margin: 3em; }
+    main #bordeaux-vin .bordeaux-item01 {
+      min-width: 320px;
+      vertical-align: middle;
+      margin-left: 8em;
+      margin-bottom: 3em;
+      margin-top: 3em; }
+      main #bordeaux-vin .bordeaux-item01 img {
+        width: auto;
+        height: auto; }
+    main #bordeaux-vin .bordeaux-item02 {
+      min-width: 320px;
+      vertical-align: middle;
+      margin-right: 8em;
+      margin-top: 3em; }
+      main #bordeaux-vin .bordeaux-item02 img {
+        width: auto;
+        height: auto; }
+    main #bordeaux-vin .bordeaux-item03 {
+      margin: 1em;
+      min-width: 320px;
+      vertical-align: middle;
+      margin: auto;
+      padding: 3em; }
+      main #bordeaux-vin .bordeaux-item03 img {
+        width: auto;
+        height: auto; }
+  main #photo {
+    background-color: white; }
+    main #photo .photo-content {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around; }
+    main #photo .photo-item01 {
+      margin: 1em;
+      min-width: 320px;
+      vertical-align: middle;
+      margin: auto;
+      padding: 3em; }
+      main #photo .photo-item01 img {
+        width: auto;
+        height: auto; }
+    main #photo .photo-item02 {
+      min-width: 320px;
+      vertical-align: middle;
+      margin-left: 8em;
+      margin-bottom: 3em; }
+      main #photo .photo-item02 img {
+        width: auto;
+        height: auto; }
+    main #photo .photo-item03 {
+      min-width: 320px;
+      vertical-align: middle;
+      margin-right: 8em; }
+      main #photo .photo-item03 img {
+        width: auto;
+        height: auto; }
+    main #photo .photo-item00 {
+      min-width: 320px;
+      vertical-align: middle;
+      margin-top: 9em;
+      margin-left: 11em;
+      margin-right: 11em;
+      margin-bottom: 7em; }
+      main #photo .photo-item00 img {
+        width: auto;
+        height: auto; }
+    main #photo .photo-item05 {
+      margin: 1em;
+      min-width: 320px;
+      vertical-align: middle;
+      margin: auto;
+      padding-top: 0px; }
+      main #photo .photo-item05 img {
+        width: auto;
+        height: auto; }
+  main .list {
+    /*ackground-color: pink;*/
+    text-align: center; }
+    main .list h1 {
+      text-align: center;
+      padding-top: 3em; }
+    main .list ul {
+      overflow: hidden;
+      display: inline-block; }
+    main .list img {
+      /*background-color: blue;*/
+      max-width: 2em;
+      vertical-align: middle; }
+
+/*parenthèse du main*/
